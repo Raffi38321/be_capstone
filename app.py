@@ -69,7 +69,7 @@ async def topN(file: UploadFile = File(...)):
     )
 
     return {
-        "skills": skills,
+        "skills user": skills,
         "recommendations": results
     }
 

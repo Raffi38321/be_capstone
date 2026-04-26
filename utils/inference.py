@@ -18,7 +18,8 @@ def recommend_jobs(text, tokenizer, model, job_clean, job_vectors, max_len, df):
             "judul": df.iloc[i]['Judul'],
             "perusahaan": df.iloc[i]['Perusahaan'],
             "score": float(scores[i]),
-            "iloc": int(i)
+            "iloc": int(i),
+            "skill job": df.iloc[i]['Skills'],
         })
 
     return results
